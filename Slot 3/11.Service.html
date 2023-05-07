@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        <p>The url of this page is:</p>
+        <h3> {{myUrl}}</h3>
+    </div>
+    <script>
+        var app = angular.moduce("myApp", []);
+        app.controller("myCtrl", function($scope, $location){
+            $scope.myUrl = $location.absUrl();
+        });
+    </script> -->
+
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        <p>Today's welcome message is:</p>
+        <h1>Hello AngularJS Student</h1>
+        <h1>{{myWelcome}}</h1>
+    </div>
+    <p>The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.</p>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope, $http) {
+            $http.get("welcome.htm").then(function (response){
+                $scope.myWelcome = response.data;
+            });
+        });
+    </script> -->
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <p>This header will change after two seconds:</p>
+            <h1>{{myHeader}}</h1>
+        <p>The $timeout service runs a function after a specified number of milliseconds.</p>
+    </div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope, $timeout){
+            $scope.myHeader = "Hello Word!",
+            $timeout(function(){
+                $scope.myHeader = "How are you today"
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
