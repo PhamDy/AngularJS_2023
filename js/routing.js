@@ -1,43 +1,43 @@
 app.config(function ($routeProvider) {
     $routeProvider
     .when("/product", {
-        templateUrl : "/gardening/src/product.html",
+        templateUrl : "./src/product.html",
         controller : "myController"
     })
     .when("/details/:id/:name", {
-        templateUrl : "/gardening/src/deails.html",
+        templateUrl : "./src/deails.html",
         controller : "myController"
     })
     .when("/", {
-        templateUrl : "/gardening/src/home.html",
+        templateUrl : "./src/home.html",
         controller : "myController"
     })
     .when("/viewCart", {
-        templateUrl : "/gardening/src/viewCart.html",
+        templateUrl : "./src/viewCart.html",
         controller : "myController"
     })
     .when("/checkout", {
-        templateUrl : "/gardening/src/checkout.html",
+        templateUrl : "./src/checkout.html",
         controller : "myController"
     })
     .when("/payment", {
-        templateUrl : "/gardening/src/payment.html",
+        templateUrl : "./src/payment.html",
         controller : "myController"
     })
     .when("/complete", {
-        templateUrl : "/gardening/src/complete.html",
+        templateUrl : "./src/complete.html",
         controller : "myController"
     })
     .when("/blog", {
-        templateUrl : "/gardening/src/blog.html",
+        templateUrl : "./src/blog.html",
         controller : "myController"
     })
     .when("/contact", {
-        templateUrl : "/gardening/src/contact.html",
+        templateUrl : "./src/contact.html",
         controller : "myController"
     })
     .when("/aboutUs", {
-        templateUrl : "/gardening/src/aboutUs.html",
+        templateUrl : "./src/aboutUs.html",
         controller : "myController"
     })
     
