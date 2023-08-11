@@ -91,12 +91,12 @@ $scope.register = function() {
           // Đăng nhập thành công với tài khoản admin
           alert('Login Successful as Admin!');
           $scope.logForm.$setPristine(); // Đặt lại form về trạng thái ban đầu
-          location.href = '/gardening/index.html'; // Chuyển hướng đến trang "admin.html"
+          location.href = '/index.html'; // Chuyển hướng đến trang "admin.html"
         } else {
           // Đăng nhập thành công với các tài khoản khác
           alert('Login Successful!');
           $scope.logForm.$setPristine(); // Đặt lại form về trạng thái ban đầu
-          location.href = '/gardening/index.html'; // Chuyển hướng đến trang "1.html"
+          location.href = '/index.html'; // Chuyển hướng đến trang "1.html"
         }
       } else {
         alert('Invalid username or password!');

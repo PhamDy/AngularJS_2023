@@ -13,7 +13,7 @@
 /* About Us */
 
 #jumbotron-aboutUs {
-    background-image: url(/gardening/img/aboutUs/sushobhan-badhai-LrPKL7jOldI-unsplash.jpg);
+    background-image: url(/img/aboutUs/sushobhan-badhai-LrPKL7jOldI-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -95,7 +95,7 @@
 /* Service Box */
 
 .aboutus-pages #about-servicebox {
-    background-image: url(/gardening/img/aboutUs/dr-sourabh-panari-878cggGk4FE-unsplash.jpg);
+    background-image: url(/img/aboutUs/dr-sourabh-panari-878cggGk4FE-unsplash.jpg);
     height: 532px;
     background-size: cover;
     background-position: center;
@@ -164,7 +164,7 @@
 /* NewsLetter */
 
 .jumbotron--email {
-    background-image: url(/gardening/img/aboutUs/jess-bailey-K9BOrwoFVYc-unsplash.jpg);
+    background-image: url(/img/aboutUs/jess-bailey-K9BOrwoFVYc-unsplash.jpg);
     background-size: cover;
     background-position: center;
     padding: 65px 0 70px 0px;

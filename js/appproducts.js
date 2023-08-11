@@ -34,7 +34,7 @@ app.directive('slickSlider', function() {
     };
   })
   .controller('myController', function($scope, $http, $window, $routeParams, $interval) {
-    $http.get('/gardening/product.json')
+    $http.get('product.json')
       .then(function(response) {
         $scope.products = response.data;
         $scope.id = $routeParams.id;
@@ -57,14 +57,14 @@ app.directive('slickSlider', function() {
           text2: 'The Most Beautiful',
           text3: 'Bonsai',
           text4: 'The sale will take place this week.',
-          imageUrl: '/gardening/img/banner/s1.webp'
+          imageUrl: '/img/banner/s1.webp'
       },
       {
           text1: 'Style Destination',
           text2: 'Up To 30% Off',
           text3: 'First Order',
           text4: 'The sale will take place this week.',
-          imageUrl: '/gardening/img/banner/s2.webp'
+          imageUrl: '/img/banner/s2.webp'
       }
       // Add more slides as needed
   ];
@@ -82,12 +82,12 @@ app.directive('slickSlider', function() {
   // Feedback
   $scope.currentfbSlide = 0;
 $scope.fbslides = [
-{ image: '/gardening/img/banner/customer1.jpg', feedback: 'Great product!', name: 'John Doe', date: '01/10/2023' },
-{ image: '/gardening/img/banner/customer2.jpg', feedback: 'I love it!', name: 'Jane Smith', date: '02/02/2023' },
-{ image: '/gardening/img/banner/customer3.jpg', feedback: 'Highly recommended!', name: 'Bob Johnson', date: '07/08/2023' },
-{ image: '/gardening/img/banner/customer4.jpg', feedback: 'Amazing plant!', name: 'Alice Brown', date: '13/02/2023' }
+{ image: '/img/banner/customer1.jpg', feedback: 'Great product!', name: 'John Doe', date: '01/10/2023' },
+{ image: '/img/banner/customer2.jpg', feedback: 'I love it!', name: 'Jane Smith', date: '02/02/2023' },
+{ image: '/img/banner/customer3.jpg', feedback: 'Highly recommended!', name: 'Bob Johnson', date: '07/08/2023' },
+{ image: '/img/banner/customer4.jpg', feedback: 'Amazing plant!', name: 'Alice Brown', date: '13/02/2023' }
 ];
-$scope.productImage = '/gardening/img/banner/feed-back.jpg';
+$scope.productImage = '/img/banner/feed-back.jpg';
 
 $scope.changefbSlide = function (index) {
 if (index < 0) {

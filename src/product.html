@@ -14,7 +14,7 @@
                 <input class="search-input1" type="text" placeholder="Search..." id="search" name="search" ng-model="product.name">
                 <a class="search-icon1"><i class="bx bx-search"></i></a>
             </div>
-            <a href="/gardening/src/login.html"><i class="bx bx-user"></i></a>
+            <a href="./login.html"><i class="bx bx-user"></i></a>
             <a href="#"><i class="bx bx-heart"></i></a>
             <a ng-click="showcart()" style="cursor: pointer;">
                 <i class="bx bx-cart" ></i>
@@ -174,8 +174,8 @@
                                 | orderBy:sortByPriceHighToLow | orderBy:sortByPriceLowToHigh | filter:sortProducts | orderBy:sortByName | orderBy:sortByQuantity"
                                 ng-if="matchCategory(product)">
                                     <div class="on-view">
-                                        <img src="/gardening/img/icons8-heart-24.png" alt="" style="margin-bottom: 10px; cursor: pointer;" >
-                                        <a href="#!details/{{ product.id }}/{{ product.name }}"><img src="/gardening/img/icons8-view-24.png" alt=""></a>
+                                        <img src="/img/icons8-heart-24.png" alt="" style="margin-bottom: 10px; cursor: pointer;" >
+                                        <a href="#!details/{{ product.id }}/{{ product.name }}"><img src="/img/icons8-view-24.png" alt=""></a>
                                     </div>
                                     <div class="product-img">
                                         <a href="#!details/{{ product.id }}/{{ product.name }}"><img ng-src="{{ product.img2 }}" alt=""></a>
