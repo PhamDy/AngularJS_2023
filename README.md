@@ -1,6 +1,13 @@
 The sun
 eProject: Website Plamt
-Mentor: Nguyễn Tuân
+
+
+
+Mentor: 
+Nguyễn Tuân
+
+
+
 Member:
 
 Pham Dac Dy
@@ -9,6 +16,6 @@ Pham Hoang Gia Hung
 
 Nguyen Van Tung
 
-Nguyễn Duy Hoàng
+Nguyen Duy Hoang
 
 Vuong Hoang Son
