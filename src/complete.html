@@ -1,27 +1,29 @@
 <section id="header">
-  <a href="#" class="logo1">Plamt</a>
-      <div class="nav-bar1">
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#!product">Product</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-    </div>  
-      <div class="nav-icon1">
-          <div class="search-box1">
-              <input class="search-input1" type="text" placeholder="Search..." id="search" name="search" ng-model="product.name">
-              <a class="search-icon1"><i class="bx bx-search"></i></a>
-          </div>
-          <a href="./login.html"><i class="bx bx-user"></i></a>
-          <a href="#"><i class="bx bx-heart"></i></a>
-          <a ng-click="showcart()" style="cursor: pointer;">
-              <i class="bx bx-cart" ></i>
-              
-          </a>
-      </div>
-</section>
+    <a href="#" class="logo1">Plamt</a>
+        <div class="nav-bar1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#!product">Product</a></li>
+                <li><a href="#!aboutUs">About us</a></li>
+                <li><a href="#!blog">Blog</a></li>
+                <li><a href="#!contact">Contact</a></li>
+            </ul>
+      </div>  
+        <div class="nav-icon1">
+            <div class="search-box1">
+                <input class="search-input1" type="text" placeholder="Search..." id="search" name="search" ng-model="product.name">
+                <a class="search-icon1"><i class="bx bx-search"></i></a>
+            </div>
+            <a href="/src/login.html"><i class="bx bx-user"></i></a>
+            <a href="#"><i class="bx bx-heart"></i></a>
+            <a ng-click="showcart()" style="cursor: pointer;">
+                <i class="bx bx-cart" ></i>
+                <div class="count-cart">
+                    <p class="count-cart-sup" ng-show="count > 0">{{ count }} </p>
+                </div>
+            </a>
+        </div>
+  </section>
 
     <div id="thanks-for-buying-container" class="container">
         <div class="tks-for-buy-card">
