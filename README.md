@@ -1,6 +1,10 @@
 The sun
 eProject: Website Plamt
-Mentor: Nguyễn Tuân
+Mentor: 
+Nguyễn Tuân
+
+
+
 Member:
 
 Pham Dac Dy
