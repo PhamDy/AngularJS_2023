@@ -10,9 +10,9 @@
         "wateringCycle": "Since artificial flowers are not living plants, they do not require any watering.",
         "lightRequirements": "Artificial flowers do not have any specific light requirements as they do not rely on photosynthesis for energy.",
         "categories": "houseplant",
-        "img1": "/img/product/1.houseplant/1.ArtificialFlower/1.webp",
-        "img2": "/img/product/1.houseplant/1.ArtificialFlower/2.webp",
-        "img3": "/img/product/1.houseplant/1.ArtificialFlower/3.webp"
+        "img1": "./img/product/1.houseplant/1.ArtificialFlower/1.webp",
+        "img2": "./img/product/1.houseplant/1.ArtificialFlower/2.webp",
+        "img3": "./img/product/1.houseplant/1.ArtificialFlower/3.webp"
     },   
 
     {
@@ -26,9 +26,9 @@
         "wateringCycle": "Parlor Palms prefer to be kept consistently moist but not soggy. Water the plant when the top inch of soil feels dry. During the growing season (spring and summer), you might need to water more frequently, and during the dormant season (fall and winter), you can reduce watering but still ensure the soil doesn't completely dry out.",
         "lightRequirements": "Parlor Palms thrive in bright, indirect light. They can tolerate lower light conditions, but too much direct sunlight can scorch their leaves. Ideally, they should be placed near a north or east-facing window where they can receive filtered sunlight.",        
         "categories": "houseplant",
-        "img1": "/img/product/1.houseplant/2.ArecaceaeChamaedorea/1.webp",
-        "img2": "/img/product/1.houseplant/2.ArecaceaeChamaedorea/2.webp",
-        "img3": "/img/product/1.houseplant/2.ArecaceaeChamaedorea/3.webp"
+        "img1": "./img/product/1.houseplant/2.ArecaceaeChamaedorea/1.webp",
+        "img2": "./img/product/1.houseplant/2.ArecaceaeChamaedorea/2.webp",
+        "img3": "./img/product/1.houseplant/2.ArecaceaeChamaedorea/3.webp"
     },
 
     {
