@@ -107,26 +107,26 @@
         </div>
     <div class="container-fluid formAndContact" style="margin-bottom: 50px; padding: 0;">
         <div class="col-md-8">
-            <form >
+            <form ng-submit="submitForm()">
                 <div class="form-row">
                     <div class="col-6">
                         <label for="name" class="label-form">Name:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
-                        <div id="nameError" class="error-message"></div>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" ng-model="name" >
+                        <div id="nameError" class="error-message" ng-show="nameError" style="color: red;">Name is required</div>
                     </div>
                     <div class="col-6">
                         <label for="email" class="label-form">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                        <div id="emailError" class="error-message"></div>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" ng-model="email" >
+                        <div id="emailError" class="error-message" ng-show="emailError" style="color: red;">Email is required</div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-12">
                         <label style="margin-left: 20px;" for="message" class="label-form">Your message:</label>
-                    <div class="col">
-                        <textarea id="message" cols="135" rows="13"></textarea>
-                        <div id="messageError" class="error-message"></div>
-                    </div>
+                        <div class="col">
+                            <textarea id="message" cols="135" rows="13" ng-model="message"></textarea>
+                            <div id="messageError" class="error-message" ng-show="messageError" style="color: red;">Message is required</div>
+                        </div>
                     </div>
                 </div>
                 <div class="send">

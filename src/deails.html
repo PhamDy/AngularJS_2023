@@ -395,7 +395,7 @@
                 <h1>Feedback</h1>
                 <div class="wrapper">
                     <h3>Send Feedback</h3>
-                    <form action="#" name="comForm" ng-app="validCom" controller="comCtrl" novalidate>
+                    <form name="comForm" novalidate>
                         <div class="rating">
                             <input type="number" name="rating" hidden>
                             <i class="bx bx-star star" style="--i: 0;"></i>
@@ -404,14 +404,14 @@
                             <i class="bx bx-star star" style="--i: 3;"></i>
                             <i class="bx bx-star star" style="--i: 4;"></i>
                         </div>
-                        <input type="text" name="username" ng-model="username" placeholder="Name">
-                        <span ng-show="comForm.username.$touched && comForm.username.$pristine" style="color: red;">
+                        <input type="text" name="username" placeholder="Name">
+                        <span  style="color: red;">
                             Username Is Required !</span>
-                        <textarea name="opinion" ng-model="textarea" cols="30" rows="5" placeholder="Your opinion..." required></textarea>
-                        <span ng-show="comForm.opinion.$touched && comForm.opinion.$invalid" style="color: red;">
+                        <textarea name="opinion"  cols="30" rows="5" placeholder="Your opinion..." required></textarea>
+                        <span style="color: red;">
                             Opinion is Required !</span>
                         <div class="btn-group">
-                            <button type="submit" class="btn submit" ng-disabled="comForm.$invalid">Submit</button>
+                            <button type="submit" class="btn submit">Submit</button>
                             <button class="btn cancel">Cancel</button>
                         </div>
                     </form>
@@ -583,10 +583,6 @@
     });
 </script>
 <script>
-    var app = angular.module('validCom',[]);
-    app.controller('comCtrl',function($scope){
-
-    });
     // rating function
     const allStar = document.querySelectorAll('.rating .star')
     const ratingValue = document.querySelector('.rating input')

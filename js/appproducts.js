@@ -352,7 +352,63 @@ $scope.upquantity = function(item) {
         sessionStorage.setItem('total', $scope.total.toString());
       }
     });
-    
+  
+    // validate
+    $scope.nameError = false;
+    $scope.emailError = false;
+    $scope.messageError = false;
+
+    $scope.submitForm = function() {
+        // Kiểm tra các trường input và hiển thị thông báo lỗi nếu cần
+        if (!$scope.name || $scope.name.trim() === '') {
+            $scope.nameError = true;
+        }
+        if (!$scope.email || $scope.email.trim() === '') {
+            $scope.emailError = true;
+        }
+        if (!$scope.message || $scope.message.trim() === '') {
+            $scope.messageError = true;
+        }
+
+        // Nếu có lỗi, ngăn chặn việc submit
+        if ($scope.nameError || $scope.emailError || $scope.messageError) {
+            return;
+        }
+
+        // Thực hiện xử lý submit tại đây
+    };
+    // pay
+    $scope.firstNameError = false;
+    $scope.lastNameError = false;
+    $scope.emailError = false;
+    $scope.addressError = false;
+    $scope.phoneError = false;
+
+    $scope.processPayment = function() {
+        // Kiểm tra các trường input và hiển thị thông báo lỗi nếu cần
+        if (!$scope.firstName || $scope.firstName.trim() === '') {
+            $scope.firstNameError = true;
+        }
+        if (!$scope.lastName || $scope.lastName.trim() === '') {
+            $scope.lastNameError = true;
+        }
+        if (!$scope.email || $scope.email.trim() === '') {
+            $scope.emailError = true;
+        }
+        if (!$scope.address || $scope.address.trim() === '') {
+            $scope.addressError = true;
+        }
+        if (!$scope.phone || $scope.phone.trim() === '') {
+            $scope.phoneError = true;
+        }
+
+        // Nếu có lỗi, ngăn chặn việc chuyển đến trang tiếp theo
+        if ($scope.firstNameError || $scope.lastNameError || $scope.emailError || $scope.addressError || $scope.phoneError) {
+            return;
+        }
+
+        // Chuyển đến trang tiếp theo
+    };
 
 });
   
