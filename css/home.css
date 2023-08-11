@@ -318,11 +318,11 @@
 
 /* Background images for slides */
 #Banner .item:nth-child(1) {
-    background-image: url('/img/banner/s1.webp');
+    background-image: url('/AngularJS_2023/img/banner/s1.webp');
 }
 
 #Banner .item:nth-child(2) {
-    background-image: url('/img/banner/s2.webp');
+    background-image: url('/AngularJS_2023/img/banner/s2.webp');
 }
 
 #Banner .background-image {
@@ -370,11 +370,11 @@
 }
 
 #banner1 {
-    background-image: url('/img/banner/banner1.webp');
+    background-image: url('/AngularJS_2023/img/banner/banner1.webp');
 }
 
 #banner2 {
-    background-image: url('/img/banner/banner2.webp');
+    background-image: url('/AngularJS_2023/img/banner/banner2.webp');
 }
 
 .curtain-effect {
@@ -928,7 +928,7 @@ transform: translateX(-100%);
     content: "";
     width: 28px;
     height: 28px;
-    background: url(/img/instagram/instagram.svg) no-repeat;
+    background: url(/AngularJS_2023/img/instagram/instagram.svg) no-repeat;
     margin-right: 12px;
     position: relative;
     top: 9px;
