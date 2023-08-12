@@ -395,7 +395,7 @@
                 <h1>Feedback</h1>
                 <div class="wrapper">
                     <h3>Send Feedback</h3>
-                    <form name="comForm" novalidate>
+                    <form  name="comForm" ng-submit="submitForm1()">
                         <div class="rating">
                             <input type="number" name="rating" hidden>
                             <i class="bx bx-star star" style="--i: 0;"></i>
@@ -404,12 +404,12 @@
                             <i class="bx bx-star star" style="--i: 3;"></i>
                             <i class="bx bx-star star" style="--i: 4;"></i>
                         </div>
-                        <input type="text" name="username" placeholder="Name">
-                        <span  style="color: red;">
-                            Username Is Required !</span>
-                        <textarea name="opinion"  cols="30" rows="5" placeholder="Your opinion..." required></textarea>
-                        <span style="color: red;">
-                            Opinion is Required !</span>
+                        <input type="text" id="username" name="username" ng-model="username"  placeholder="Name">
+                        <div id="nameError1" class="error-message" ng-show="nameError1" style="color: red;">Name is required</div>
+                        <textarea id="message1" name="opinion"  ng-model="message1" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+
+                        <div id="messageError1" class="error-message1" ng-show="messageError1" style="color: red;">Message is required</div>
+                        
                         <div class="btn-group">
                             <button type="submit" class="btn submit">Submit</button>
                             <button class="btn cancel">Cancel</button>

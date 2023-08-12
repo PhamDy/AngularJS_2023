@@ -375,39 +375,27 @@ $scope.upquantity = function(item) {
             return;
         }
 
-        // Thực hiện xử lý submit tại đây
+        
     };
-    // pay
-    $scope.firstNameError = false;
-    $scope.lastNameError = false;
-    $scope.emailError = false;
-    $scope.addressError = false;
-    $scope.phoneError = false;
+    // review
+    $scope.nameError1 = false;
 
-    $scope.processPayment = function() {
+    $scope.messageError1 = false;
+
+    $scope.submitForm1 = function() {
         // Kiểm tra các trường input và hiển thị thông báo lỗi nếu cần
-        if (!$scope.firstName || $scope.firstName.trim() === '') {
-            $scope.firstNameError = true;
+        if (!$scope.username || $scope.username.trim() === '') {
+            $scope.nameError1 = true;
         }
-        if (!$scope.lastName || $scope.lastName.trim() === '') {
-            $scope.lastNameError = true;
-        }
-        if (!$scope.email || $scope.email.trim() === '') {
-            $scope.emailError = true;
-        }
-        if (!$scope.address || $scope.address.trim() === '') {
-            $scope.addressError = true;
-        }
-        if (!$scope.phone || $scope.phone.trim() === '') {
-            $scope.phoneError = true;
+        if (!$scope.message1 || $scope.message1.trim() === '') {
+            $scope.messageError1 = true;
         }
 
-        // Nếu có lỗi, ngăn chặn việc chuyển đến trang tiếp theo
-        if ($scope.firstNameError || $scope.lastNameError || $scope.emailError || $scope.addressError || $scope.phoneError) {
+        // Nếu có lỗi, ngăn chặn việc submit
+        if ($scope.nameError1 || $scope.messageError1) {
             return;
         }
 
-        // Chuyển đến trang tiếp theo
     };
 
 });
