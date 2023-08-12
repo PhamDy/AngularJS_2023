@@ -56,7 +56,7 @@ app.directive('slickSlider', function() {
           text1: 'Style Destination',
           text2: 'The Most Beautiful',
           text3: 'Bonsai',
-          text4: 'The sale will take place this week.',
+          text4: 'Elegant living sculptures, meticulously shaped and cherished.',
           imageUrl: '/AngularJS_2023/img/banner/s1.webp'
       },
       {
